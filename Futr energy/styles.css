@@ -1,0 +1,337 @@
+/* General Styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+}
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Header and Navigation */
+header {
+    background: url('/assets/images/travel-banner.jpeg') center/cover no-repeat;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-position: center top; /* Align the image to the top */
+    padding-top: 80px; /* Add padding so content shifts below the navbar */
+}
+
+.top-strip {
+    position: absolute; /* Position it above the navbar */
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white; /* White background for the contact-info section */
+    padding: 10px 20px;
+ 
+}
+
+.travel-with-us {
+    text-align: center; /* Center the text */
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.travel-with-us .travel {
+    color: skyblue; /* Skyblue color for "Travel" */
+    font-size: 32px; /* Larger font size for "Travel" */
+    display: block; /* Display "Travel" as a block element */
+}
+
+.travel-with-us .with-us {
+    color: black; /* Default color for "with us" */
+    font-size: 24px; /* Adjust the font size as needed */
+}
+.read-more-btn {
+    background-color: #ff6600; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 50px; /* Make the button oval */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Display as inline-block */
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+.contact-info {
+    position: absolute; /* Position it at the top-right corner */
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding-right: 300px; /* Add space to the left of the text */
+    z-index: 1000; /* Ensure it appears above the navbar */
+    display: flex;
+    justify-content: flex-start; /* Align the contact info to the left */
+    color: #333; /* Dark text color for visibility */
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+}
+
+
+.contact-info i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: url('/assets/images/header-bg.jpg') no-repeat center center/cover; /* Add your image here */
+    position: fixed; /* Keep the navbar fixed at the top */
+    top: 0; /* Ensure it stays at the top */
+    width: 100%; /* Stretch it across the screen */
+    z-index: 900; /* Ensure the navbar stays below the contact-info */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow of navbar */
+}
+
+.menu {
+    display: flex; /* Align menu items horizontally */
+    flex-wrap: wrap; /* Ensure items wrap if the screen size is small */
+    gap: 20px; /* Space between menu items */
+}
+
+.menu ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Align items horizontally */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    color: white;
+    padding: 8px 15px; /* Add padding to menu links */
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add hover effect */
+    border-radius: 4px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px; /* Add more space from the top */
+}
+
+.read-more-btn {
+    background-color: #ff6600; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 15px 30px; /* Larger padding for the button */
+    border-radius: 50px; /* Make the button oval */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 18px; /* Font size */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Display as inline-block */
+    margin-top: 20px; /* Adjust margin to control spacing */
+}
+
+.hero-section h1 {
+    margin-top: 50px;
+    font-size: 48px;
+}
+/* Search Box */
+/* Main Container with White Background */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9); /* White background with low opacity */
+    padding: 10px; /* Reduced padding */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Reduced width */
+    width: 90%;
+}
+
+/* Form Styling */
+.search-box {
+    display: flex;
+    flex-wrap: wrap; /* Wrap fields for responsiveness */
+    gap: 10px; /* Reduced gap */
+    width: 100%;
+    align-items: center;
+}
+
+/* Individual Fields */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 28%; /* Adjust width for responsiveness */
+    min-width: 150px;
+    align-items: center; /* Center content horizontally */
+    margin-bottom: 10px; /* Space between fields */
+}
+
+.form-field label {
+    font-size: 12px; /* Slightly smaller label */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-field input,
+.form-field select {
+    padding: 8px; /* Adjusted padding for height */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Adjust font size */
+    text-align: center; /* Centers the input text horizontally */
+    line-height: normal; /* Aligns placeholder vertically */
+    width: 100px; /* Smaller width for input fields */
+    margin-right: 10px; /* Reduced space between fields */
+    box-sizing: border-box; /* Keeps width consistent */
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+/* Button Container */
+.button-container {
+    flex: 1 1 28%; /* Align with fields */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Search button styling */
+.search-button {
+    background-color: #ff6600; /* Orange button */
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Adjust button size */
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #e05500;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 50px;
+    text-align: center;
+}
+.offer-grid, .places, .blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.offer-box, .place, .blog-post {
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer-content ul {
+    list-style: none;
+}
+.contact-form input, .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Image Container with Overlay Text */
+.image-container {
+    position: relative;
+    background-color: white; /* White background */
+    padding: 20px; /* Adjust padding as needed */
+    display: inline-block; /* Adjust display as needed */
+}
+
+.vertical-image {
+    height: 400px; /* Adjust the height as needed */
+    width: 500px; /* Maintain the aspect ratio */
+    display: block;
+}
+
+.overlay-text {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Align items vertically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+    text-align: left; /* Align text to the left */
+    background-color: #fff; /* White background */
+    height: 350px; /* Adjust height as needed */
+    width: 450px; /* Adjust width as needed */
+    border-radius: 5px; /* Optional: rounded corners */
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for emphasis */
+}
+
+/* Styling for text content inside overlay-text */
+.overlay-text .text-content {
+    
+    padding-right: 70px; /* Add space between text and image */
+}
+
+/* Styling for image inside overlay-text */
+.overlay-text img {
+    height: 100%; /* Scale image to fit the container */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills its space without distortion */
+}
